@@ -82,7 +82,7 @@ Foi implementado um relacionamento **One-to-Many (1:N)**:
 - Um autor pode ter vários livros;
 - Cada livro pertence a um autor.
 
-### 🎥 Vídeo da Parte 02
+###  Vídeo da Parte 02
 
 [Assistir ao vídeo – Sistema de Livros | Parte 02](https://youtu.be/jcxlKPzr2ZY)
 
