@@ -1,12 +1,12 @@
 # 📚 Sistema de Livros – API REST
 
-Projeto desenvolvido utilizando Java e Spring Boot, com o objetivo de construir uma API REST para gerenciamento de autores e livros.
+Projeto desenvolvido utilizando Java e Spring Boot para praticar a construção de uma API REST para gerenciamento de autores e livros.
 
-O desenvolvimento será dividido em três partes, acompanhando a evolução da aplicação e a implementação de novas funcionalidades.
+O projeto foi desenvolvido em duas partes, acompanhando a implementação das funcionalidades e a evolução do banco de dados.
 
-## 🚀 Parte 01 – CRUD de Autores
+##  Parte 01 – CRUD de Autores
 
-Nesta primeira etapa, foi desenvolvida a entidade `Autor` e implementada uma API REST com operações CRUD (Create, Read, Update e Delete), permitindo o gerenciamento dos registros de autores.
+Nesta primeira etapa, criei a entidade `Autor` e desenvolvi as operações CRUD (Create, Read, Update e Delete).
 
 ### Funcionalidades
 
@@ -17,21 +17,21 @@ Nesta primeira etapa, foi desenvolvida a entidade `Autor` e implementada uma API
 - Atualizar informações de um autor;
 - Excluir autores.
 
-### 🛠️ Tecnologias utilizadas
+###  Tecnologias utilizadas
 
 - Java
 - Spring Boot
 - Spring Data JPA
 - H2 Database
 
-### 📌 Estrutura da entidade Autor
+###  Estrutura da entidade Autor
 
 | Atributo | Descrição |
 |---|---|
 | id | Identificador gerado automaticamente |
 | nome | Nome do autor |
 
-### 📍 Endpoints
+###  Endpoints
 
 Todos os endpoints utilizam o prefixo `/autor`.
 
@@ -44,18 +44,55 @@ Todos os endpoints utilizam o prefixo `/autor`.
 | PUT | `/autor/{id}` | Atualizar autor | 200 OK / 404 Not Found |
 | DELETE | `/autor/{id}` | Excluir autor | 204 No Content / 404 Not Found |
 
-### 🎥 Vídeo da Parte 01
-
-Confira o desenvolvimento desta etapa no YouTube:
+###  Vídeo da Parte 01
 
 [Assistir ao vídeo – Criando API REST | Sistema de Livros – Parte 01](https://youtu.be/SSyVOuQ1EoQ?si=weo_70NjpqjIwppR)
 
-### 📖 Próximas etapas
+---
 
-- **Parte 01:** Criação da entidade Autor e implementação do CRUD.
-- **Parte 02:** Criação da entidade Livro e implementação do relacionamento entre autores e livros.
-- **Parte 03:** Migração do banco de dados H2 para PostgreSQL.
+##  Parte 02 – Livros, Relacionamento e PostgreSQL
 
-### 🎯 Objetivo
+Na segunda parte, criei a entidade `Livro` e implementei as mesmas operações CRUD da entidade `Autor`.
 
-Praticar conceitos de desenvolvimento Backend, construção de APIs REST, persistência de dados e relacionamento entre entidades utilizando o ecossistema Java.
+Comecei testando as funcionalidades com o H2 Database. Depois, fiz a migração para PostgreSQL e implementei o relacionamento entre autores e livros, finalizando a aplicação com tudo funcionando no novo banco de dados.
+
+### Funcionalidades
+
+- Criar e cadastrar livros;
+- Listar todos os livros;
+- Buscar livro por ID;
+- Atualizar informações de um livro;
+- Excluir livros;
+- Relacionar livros aos seus respectivos autores;
+- Migrar do H2 Database para PostgreSQL.
+
+###  Tecnologias utilizadas
+
+- Java
+- Spring Boot
+- Spring Data JPA
+- H2 Database
+- PostgreSQL
+- Git e GitHub
+
+### Relacionamento entre as entidades
+
+Foi implementado um relacionamento **One-to-Many (1:N)**:
+
+- Um autor pode ter vários livros;
+- Cada livro pertence a um autor.
+
+### 🎥 Vídeo da Parte 02
+
+[Assistir ao vídeo – Sistema de Livros | Parte 02](https://youtu.be/jcxlKPzr2ZY)
+
+---
+
+## Etapas
+
+- **Parte 01:** CRUD de Autores.
+- **Parte 02:** CRUD de Livros, relacionamento entre autores e livros e migração para PostgreSQL.
+
+## Objetivo
+
+Praticar desenvolvimento Backend com Java e Spring Boot, trabalhando com APIs REST, operações CRUD, relacionamentos entre entidades e bancos de dados.
