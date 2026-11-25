@@ -3,7 +3,7 @@ package pedrofautz.Biblioteca.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pedrofautz.Biblioteca.Entity.Autor;
-import pedrofautz.Biblioteca.Repositoty.AutorRepositoty;
+import pedrofautz.Biblioteca.Repositoty.AutorRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public class AutorService {
     @Autowired
-    private AutorRepositoty repositoty;
+    private AutorRepository repositoty;
 
     // Teste Http
     public String testeAutor(){

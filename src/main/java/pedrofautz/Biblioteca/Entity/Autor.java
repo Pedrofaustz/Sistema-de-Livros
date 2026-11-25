@@ -1,10 +1,15 @@
 package pedrofautz.Biblioteca.Entity;
 
 import jakarta.persistence.*;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
+
 import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
+
+import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
+
 
 @Entity
 @Table(name = "tb_autor")
@@ -23,4 +28,7 @@ public class Autor {
     public String nome;
 
     // Lista de Livros
+
+    @OneToMany(mappedBy = "autor")
+    private List<Livro> livro;
 }
